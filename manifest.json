@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Trello List Orderer",
+  "description": "This extension re-arranges the cards on a Trello board",
+  "version": "1.0",
+  "permissions": [
+   "activeTab"
+   ],
+   "content_scripts": [ {
+    "js": [ "jquery-min.js", "orderer.js" ],
+    "matches": [ "http://trello.com/*", "https://trello.com/*"]
+  }]
+}
